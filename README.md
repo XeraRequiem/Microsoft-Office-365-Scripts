@@ -11,16 +11,18 @@ To Use Script:
 The script can be used to update the enabled services of a single user, a list of users, or all users registered under company's Microsoft Id.
 
 # Parameters
-	Parameters: 
--UsersFile 
-Type: String
-Input: Path to text file containing the list of principal names that will have their license standardized. Users without the license will have the license enabled before standardizing the services. Text file should be formatted so each name is separated by a new line. Cannot be used with PrincipalName parameter.
--PrincipalName 
-Type: String
-Input: Principal name of the user to be affected by the script. Do not include if UsersFile parameter is set. Cannot be used with UsersFile parameter.
--ExceptionsFile 
-Type: String
-Input: Path to text file containing list of principal names that should not have their license standardized. File must be formatted so each name is separated by a new line. Requires UsersFile parameter to be included.
+	-UsersFile 
+		Type: String
+		Input: Path to text file containing the list of principal names that will have their license standardized. Users without the license will have the license enabled before standardizing the services. Text file should be formatted so each name is separated by a new line. Cannot be used with PrincipalName parameter.
+		
+	-PrincipalName 
+		Type: String
+		Input: Principal name of the user to be affected by the script. Do not include if UsersFile parameter is set. Cannot be used with UsersFile parameter.
+		
+	-ExceptionsFile 
+		Type: String
+		Input: Path to text file containing list of principal names that should not have their license standardized. File must be formatted so each name is separated by a new line. Requires UsersFile parameter to be included.
+	
 	-E1
 		Type: Switch
 		Input: None
@@ -28,29 +30,35 @@ Input: Path to text file containing list of principal names that should not have
 	-E5 
 		Type: Switch
 		Input: None
-Include to standardize services under Enterprise E5 license.
+		Include to standardize services under Enterprise E5 license.
+	
 	-CRMCustomer 
 		Type: Switch
 		Input: None
-Include to standardize services under Dynamics 365 for Customer Service license.
+		Include to standardize services under Dynamics 365 for Customer Service license.
+	
 	-CRMSales 
 		Type: Switch
 		Input: None
-Include to standardize services under Dynamics 365 for Sales license.
+		Include to standardize services under Dynamics 365 for Sales license.
+	
 	-Visio 
 		Type: Switch
 		Input: None
-Include to standardize services under Visio Pro for Office 365 license.
+		Include to standardize services under Visio Pro for Office 365 license.
+	
 	-Project 
 		Type: Switch
 		Input: None
-Include to standardize services under Project Professional license.
+		Include to standardize services under Project Professional license.
+	
 	-PSTNDom 
 		Type: Switch
 		Input: None
-Include to standardize services under Skype for Business PSTN Domestic Calling license.
+		Include to standardize services under Skype for Business PSTN Domestic Calling license.
+	
 	-PSTNInt 
 		Type: Switch
 		Input: None
-Include to standardize services under Skype for Business PSTN International & Domestic Calling license.
+		Include to standardize services under Skype for Business PSTN International & Domestic Calling license.
 
