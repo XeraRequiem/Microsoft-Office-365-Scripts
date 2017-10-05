@@ -1,5 +1,5 @@
-e# Microsoft Office 365 Scripts
-PowerShell script for updating the services of Office 365 Licenses.
+# Microsoft Office 365 Scripts
+Standardizes the services under specific license. If the user doesn’t have the license, then the user is given license with the standard set of services enabled. Standard set of services is given by McKinstry IT and is embedded within the script. To change the standard, change the hash table of enabled services within corresponding script.
 
 To Use Script:
 1. Open script in any text editor.
