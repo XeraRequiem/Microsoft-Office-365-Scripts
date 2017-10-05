@@ -1,5 +1,5 @@
 # Microsoft Office 365 Scripts
-Standardizes the services under specific license. If the user doesn’t have the license, then the user is given license with the standard set of services enabled. Standard set of services is given by McKinstry IT and is embedded within the script. To change the standard, change the hash table of enabled services within corresponding script.
+Standardizes the services under specific licenses. If the user doesn’t have a license, then the user is given that license with the standard set of services enabled. Any combination of the 8 licenses can be standardized by including the corresponding switches. Standard set of services is given by McKinstry IT and is embedded within the script. To change the standard, change the hash table of enabled services within the script. Note: Only 1 CRM license and 1 PSTN license can be enabled at a time.
 
 To Use Script:
 1. Open script in any text editor.
@@ -8,7 +8,8 @@ To Use Script:
 4. (Recommended) Replace each license's list of enabled services with your comapany's standard lists.
 5. Execute script via PowerShell
 
-The script can be used to update the enabled services of a single user, a list of users, or all users registered under company's Microsoft Id.
+# Output
+Outputs errors and the principal name of the user being standardized to console in real time. No output file.
 
 # Parameters
 	-UsersFile 
