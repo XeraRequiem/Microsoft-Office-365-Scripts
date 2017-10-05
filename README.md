@@ -1,4 +1,4 @@
-# Microsoft Office 365 Scripts
+e# Microsoft Office 365 Scripts
 PowerShell script for updating the services of Office 365 Licenses.
 
 To Use Script:
@@ -11,7 +11,7 @@ To Use Script:
 The script can be used to update the enabled services of a single user, a list of users, or all users registered under company's Microsoft Id.
 
 # Parameters
-	-UsersFil
+	-UsersFile
 		Type: String
 		Input: Path to text file containing the list of principal names that will have their license standardized.
 		Users without the license will have the license enabled before standardizing the services. Text file
