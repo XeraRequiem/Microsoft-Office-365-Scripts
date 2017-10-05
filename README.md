@@ -19,11 +19,13 @@ The script can be used to update the enabled services of a single user, a list o
 		
 	-PrincipalName 
 		Type: String
-		Input: Principal name of the user to be affected by the script. Do not include if UsersFile parameter is set. Cannot be used with UsersFile parameter.
+		Input: Principal name of the user to be affected by the script. Do not include if UsersFile parameter is set.
+		Cannot be used with UsersFile parameter.
 		
 	-ExceptionsFile 
 		Type: String
-		Input: Path to text file containing list of principal names that should not have their license standardized. File must be formatted so each name is separated by a new line. Requires UsersFile parameter to be included.
+		Input: Path to text file containing list of principal names that should not have their license standardized.
+		File must be formatted so each name is separated by a new line. Requires UsersFile parameter to be included.
 	
 	-E1
 		Type: Switch
