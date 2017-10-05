@@ -13,7 +13,9 @@ The script can be used to update the enabled services of a single user, a list o
 # Parameters
 	-UsersFile 
 		Type: String
-		Input: Path to text file containing the list of principal names that will have their license standardized. Users without the license will have the license enabled before standardizing the services. Text file should be formatted so each name is separated by a new line. Cannot be used with PrincipalName parameter.
+		Input: Path to text file containing the list of principal names that will have their license standardized.
+		Users without the license will have the license enabled before standardizing the services. Text file
+		should be formatted so each name is separated by a new line. Cannot be used with PrincipalName parameter.
 		
 	-PrincipalName 
 		Type: String
